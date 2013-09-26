@@ -206,13 +206,6 @@ final class CHE_Custom_Headers_Admin {
 		if ( !empty( $attachment_id ) )
 			$image = wp_get_attachment_image_src( absint( $attachment_id ), 'che_header_image' );
 
-		/* Add the image to the pool of uploaded header images for this theme. */
-		if ( !empty( $image ) ) {
-			$is_custom_header = get_post_meta( $attachment_id, '_wp_attachment_is_custom_header', true );
-			if ( $is_custom_header !== get_stylesheet() )
-				update_post_meta( $attachment_id, '_wp_attachment_is_custom_header', get_stylesheet() );
-		}
-
 		/* Get the image URL. */
 		$url = !empty( $image ) && isset( $image[0] ) ? $image[0] : ''; ?>
 
@@ -325,10 +318,22 @@ final class CHE_Custom_Headers_Admin {
 		if ( !current_user_can( $post_type->cap->edit_post, $post_id ) || 'revision' == $post->post_type )
 			return;
 
+		/* Get the attachment ID. */
+		$image_id = absint( $_POST['che-header-image'] );
+
 		/* Set up an array of meta keys and values. */
 		$meta = array(
-			'_custom_header_image_id' => absint( $_POST['che-header-image'] ),
+			'_custom_header_image_id' => $image_id,
 		);
+
+		/* Add the image to the pool of uploaded header images for this theme. */
+		if ( 0 < $image_id ) {
+
+			$is_custom_header = get_post_meta( $image_id, '_wp_attachment_is_custom_header', true );
+
+			if ( $is_custom_header !== get_stylesheet() )
+				update_post_meta( $image_id, '_wp_attachment_is_custom_header', get_stylesheet() );
+		}
 
 		/* Only run if the current theme allows for header text. */
 		if ( current_theme_supports( 'custom-header', 'header-text' ) ) {
