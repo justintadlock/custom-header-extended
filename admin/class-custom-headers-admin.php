@@ -144,7 +144,7 @@ final class CHE_Custom_Headers_Admin {
 			return;
 
 		/* Register the custom headers script. */
-		wp_register_script( 'che-custom-headers', CUSTOM_HEADER_EXT_URI . 'js/custom-headers.min.js', array( 'wp-color-picker', 'media-views' ), '20130926', true );
+		wp_register_script( 'custom-header-extended', CUSTOM_HEADER_EXT_URI . 'js/custom-headers.min.js', array( 'wp-color-picker', 'media-views' ), '20130926', true );
 
 		/* Set up variables to pass to the custom headers script. */
 		$localize_script = array(
@@ -160,11 +160,11 @@ final class CHE_Custom_Headers_Admin {
 		$localize_script = array_map( 'esc_js', array_merge( $localize_script, $this->error_strings ) );
 
 		/* Pass custom variables to the script. */
-		wp_localize_script( 'che-custom-headers', 'che_custom_headers', $localize_script );
+		wp_localize_script( 'custom-header-extended', 'che_custom_headers', $localize_script );
 
 		/* Load the needed scripts and styles. */
-		wp_enqueue_script( 'che-custom-headers' );
-		wp_enqueue_style(  'wp-color-picker'    );
+		wp_enqueue_script( 'custom-header-extended' );
+		wp_enqueue_style(  'wp-color-picker'        );
 	}
 
 	/**
