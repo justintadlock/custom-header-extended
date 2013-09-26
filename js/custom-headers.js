@@ -42,7 +42,7 @@ jQuery( document ).ready( function( $ ) {
 	if ( $( 'input#che-header-image' ).val() ) {
 
 		/* Hide the 'set header image' link. */
-		$( '.che-add-media' ).hide();
+		$( '.che-add-media-text' ).hide();
 
 		/* Show the 'remove header image' link, the image. */
 		$( '.che-remove-media, .che-header-image-url' ).show();
@@ -52,7 +52,7 @@ jQuery( document ).ready( function( $ ) {
 	else {
 
 		/* Show the 'set header image' link. */
-		$( '.che-add-media' ).show();
+		$( '.che-add-media-text' ).show();
 
 		/* Hide the 'remove header image' link, the image. */
 		$( '.che-remove-media, .che-header-image-url' ).hide();
@@ -69,7 +69,7 @@ jQuery( document ).ready( function( $ ) {
 			$( '#che-header-image' ).val( '' );
 
 			/* Show the 'set header image' link. */
-			$( '.che-add-media' ).show();
+			$( '.che-add-media-text' ).show();
 
 			/* Hide the 'remove header image' link, the image. */
 			$( '.che-remove-media, .che-header-image-url, .che-errors' ).hide();
@@ -203,7 +203,7 @@ jQuery( document ).ready( function( $ ) {
 					$( '.che-header-image-url' ).attr( 'src', che_media_url );
 
 					/* Hides the add header link. */
-					$( '.che-add-media' ).hide();
+					$( '.che-add-media-text' ).hide();
 
 					/* Displays the header image and remove header link. */
 					$( '.che-header-image-url, .che-remove-media' ).show();
