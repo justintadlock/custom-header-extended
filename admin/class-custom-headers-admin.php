@@ -162,8 +162,9 @@ final class CHE_Custom_Headers_Admin {
 		/* Pass custom variables to the script. */
 		wp_localize_script( 'che-custom-headers', 'che_custom_headers', $localize_script );
 
-		/* Load the script. */
+		/* Load the needed scripts and styles. */
 		wp_enqueue_script( 'che-custom-headers' );
+		wp_enqueue_style(  'wp-color-picker'    );
 	}
 
 	/**
