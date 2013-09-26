@@ -144,7 +144,7 @@ final class CHE_Custom_Headers_Admin {
 			return;
 
 		/* Register the custom headers script. */
-		wp_register_script( 'che-custom-headers', CUSTOM_HEADER_EXT_URI . 'js/custom-headers.js', array( 'wp-color-picker', 'media-views' ), false, true );
+		wp_register_script( 'che-custom-headers', CUSTOM_HEADER_EXT_URI . 'js/custom-headers.min.js', array( 'wp-color-picker', 'media-views' ), '20130926', true );
 
 		/* Set up variables to pass to the custom headers script. */
 		$localize_script = array(
