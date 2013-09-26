@@ -143,9 +143,6 @@ final class CHE_Custom_Headers_Admin {
 		if ( !in_array( $hook_suffix, array( 'post-new.php', 'post.php' ) ) )
 			return;
 
-		/* Register the custom headers script. */
-		wp_register_script( 'custom-header-extended', CUSTOM_HEADER_EXT_URI . 'js/custom-headers.min.js', array( 'wp-color-picker', 'media-views' ), '20130926', true );
-
 		/* Set up variables to pass to the custom headers script. */
 		$localize_script = array(
 			'title'        => __( 'Set Header Image', 'custom-headers-extended' ),

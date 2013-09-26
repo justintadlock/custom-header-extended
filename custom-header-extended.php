@@ -60,8 +60,8 @@ final class CHE_Custom_Headers {
 		/* Load the admin files. */
 		add_action( 'plugins_loaded', array( $this, 'admin' ), 4 );
 
-		/* Add post type support. */
-		add_action( 'init', array( $this, 'post_type_support' ) );
+		/* Register scripts and styles. */
+		add_action( 'admin_enqueue_scripts', array( $this, 'admin_register_scripts' ), 5 );
 
 		/* Add post type support. */
 		add_action( 'init', array( $this, 'post_type_support' ) );
@@ -131,6 +131,24 @@ final class CHE_Custom_Headers {
 	public function post_type_support() {
 		add_post_type_support( 'post', 'custom-header' );
 		add_post_type_support( 'page', 'custom-header' );
+	}
+
+	/**
+	 * Registers scripts and styles for use in the WordPress admin (does not load theme).
+	 *
+	 * @since  0.1.0
+	 * @access public
+	 * @return void
+	 */
+	public function admin_register_scripts() {
+
+		wp_register_script(
+			'custom-header-extended',
+			CUSTOM_HEADER_EXT_URI . "js/custom-headers.min.js",
+			array( 'wp-color-picker', 'media-views' ),
+			'20130926',
+			true
+		);
 	}
 
 	/**
