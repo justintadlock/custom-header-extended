@@ -1,8 +1,17 @@
-# Custom Header Extended #
+=== Custom Header Extended ===
+
+Contributors: greenshady
+Donate link: http://themehybrid.com/donate
+Tags: post, posts, admin, image, images, header, color
+Requires at least: 3.6
+Tested up to: 3.7
+Stable tag: 0.1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Allows users to create a custom header on a per-post basis.
 
-## Description ##
+== Description ==
 
 A plugin for allowing users to set a custom header on a per-post basis. This plugin hooks into the WordPress `custom-header` theme feature and overwrites the values on single post views if the post has been given a custom header.
 
@@ -14,13 +23,13 @@ This plugin creates a custom meta box on the edit post screen. From that point, 
 
 Your theme must support the core WordPress implementation of the [Custom Headers](http://codex.wordpress.org/Custom_Headers) theme feature.
 
-## Installation ##
+== Installation ==
 
 1. Upload the `custom-header-extended` folder to your `/wp-content/plugins/` directory.
 2. Activate the "Custom Header Extended" plugin through the "Plugins" menu in WordPress.
 3. Edit a post to add a custom header.
 
-## Frequently Asked Questions ##
+== Frequently Asked Questions ==
 
 ### Why was this plugin created? ###
 
@@ -119,13 +128,13 @@ Or, if you have a plugin with post types that you'd like for me to add support f
 
 Unfortunately, I cannot provide free support for this plugin to everyone. I honestly wish I could. My day job requires too much of my time for that, which is how I pay the bills and eat. However, you can sign up for my [support forums](http://themehybrid.com/support) for full support of this plugin, all my other plugins, and all my themes for one price.
 
-## Screenshots ##
+== Screenshots ==
 
 1. Custom header meta box.
 2. Custom header meta box on the edit post screen.
 3. Custom header on a single post page.
 
-## Changelog ##
+== Changelog ==
 
 ### Version 0.1.0 ###
 
