@@ -151,14 +151,14 @@ final class CHE_Custom_Headers_Filter {
 		if ( !is_admin() ) {
 
 			/* Filter the header image. */
-			add_filter( 'theme_mod_header_image', array( $this, 'header_image' ) );
+			add_filter( 'theme_mod_header_image', array( $this, 'header_image' ), 25 );
 
 			/* Filter the header image data. */
-			add_filter( 'theme_mod_header_image_data', array( $this, 'header_image_data' ) );
+			add_filter( 'theme_mod_header_image_data', array( $this, 'header_image_data' ), 25 );
 
 			/* Filter the header text color. */
 			if ( current_theme_supports( 'custom-header', 'header-text' ) )
-				add_filter( 'theme_mod_header_textcolor', array( $this, 'header_textcolor' ) );
+				add_filter( 'theme_mod_header_textcolor', array( $this, 'header_textcolor' ), 25 );
 		}
 	}
 
