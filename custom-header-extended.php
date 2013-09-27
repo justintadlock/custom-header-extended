@@ -83,6 +83,9 @@ final class CHE_Custom_Headers {
 
 		/* Add post type support. */
 		add_action( 'init', array( $this, 'post_type_support' ) );
+
+		/* Register activation hook. */
+		register_activation_hook( __FILE__, array( __CLASS__, 'activation' ) );
 	}
 
 	/**
@@ -164,6 +167,23 @@ final class CHE_Custom_Headers {
 			'20130926',
 			true
 		);
+	}
+
+	/**
+	 * Method that runs only when the plugin is activated.
+	 *
+	 * @since  0.1.0
+	 * @access public
+	 * @return void
+	 */
+	public static function activation() {
+
+		/* Get the administrator role. */
+		$role = get_role( 'administrator' );
+
+		/* If the administrator role exists, add required capabilities for the plugin. */
+		if ( !empty( $role ) )
+			$role->add_cap( 'che_edit_header' );
 	}
 
 	/**
