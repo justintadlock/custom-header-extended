@@ -125,7 +125,7 @@ final class CHE_Custom_Headers {
 	public function i18n() {
 
 		/* Load the translation of the plugin. */
-	//	load_plugin_textdomain( 'custom-headers-extended', false, 'custom-headers/languages' );
+		load_plugin_textdomain( 'custom-header-extended', false, 'custom-header-extended/languages' );
 	}
 
 	/**

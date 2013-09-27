@@ -1,0 +1,89 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Header Extended WordPress Plugin\n"
+"POT-Creation-Date: 2013-09-26 21:38-0600\n"
+"PO-Revision-Date: 2013-09-26 21:39-0600\n"
+"Last-Translator: \n"
+"Language-Team:  <justin@justintadlock.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__;_n;"
+"_x;_x:1,2c;_n:1,2\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/class-custom-headers-admin.php:123
+msgid "Your image width and height are too small."
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:124
+msgid "Your image width and height are too large."
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:125
+msgid "Your image width is too small."
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:126
+msgid "Your image height is too small."
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:127
+msgid "Your image width is too large."
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:128
+msgid "Your image height is too large."
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:157
+msgid "Set Header Image"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:158
+#: admin/class-custom-headers-admin.php:227
+msgid "Set header image"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:188
+msgid "Custom Header"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:228
+msgid "Remove header image"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:269
+msgid "Show header text with your image."
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:271
+msgid "Default"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:272
+msgid "Show header text"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:273
+msgid "Hide header text"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:278
+msgid "Color"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:397
+msgid "Plugin support"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:398
+msgid "Rate plugin"
+msgstr ""
+
+#: admin/class-custom-headers-admin.php:399
+msgid "Donate"
+msgstr ""
