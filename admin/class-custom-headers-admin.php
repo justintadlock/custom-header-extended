@@ -223,7 +223,7 @@ final class CHE_Custom_Headers_Admin {
 
 		<!-- Begin header image. -->
 		<p>
-			<a href="#" class="che-add-media che-add-media-img"><img class="che-header-image-url" src="<?php echo esc_url( $url ); ?>" style="max-width: 100%; height: auto; display: block;" /></a>
+			<a href="#" class="che-add-media che-add-media-img"><img class="che-header-image-url" src="<?php echo esc_url( $url ); ?>" style="max-width: 100%; max-height: 200px; height: auto; display: block;" /></a>
 			<a href="#" class="che-add-media che-add-media-text"><?php _e( 'Set header image', 'custom-headers-extended' ); ?></a> 
 			<a href="#" class="che-remove-media"><?php _e( 'Remove header image', 'custom-headers-extended' ); ?></a>
 		</p>
