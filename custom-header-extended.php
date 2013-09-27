@@ -2,12 +2,14 @@
 /**
  * Plugin Name: Custom Header Extended
  * Plugin URI: http://themehybrid.com/plugins/custom-header-extended
- * Description: Allows users to upload a custom header image and set their header text display and color on a per-post basis. This plugin requires that the user's theme supports the <code>custom-header</code> WordPress feature.
+ * Description: Allows users to create <a href="http://codex.wordpress.org/Custom_Headers">custom headers</a> for individual posts, which are displayed on the single post page.  It works alongside any theme that supports the WordPress <code>custom-header</code> feature.
  * Version: 0.1.0-alpha
  * Author: Justin Tadlock
  * Author URI: http://justintadlock.com
  *
- * Long Description - http://codex.wordpress.org/Custom_Headers
+ * This plugin was created so that users could create custom headers for individual posts.  It ties
+ * into the Wordpress 'custom-header' theme feature.  Therefore, it will only work with themes that 
+ * add support for 'custom-header' via 'functions.php.
  *
  * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
  * General Public License as published by the Free Software Foundation; either version 2 of the License, 
