@@ -5,11 +5,11 @@
  * class also handles the creation of a custom header image size if the current theme doesn't allow 
  * for both a flexible width and height header image.
  *
- * @package  CustomHeadersExtended
+ * @package   CustomHeaderExtended
  * @since     0.1.0
  * @author    Justin Tadlock <justin@justintadlock.com>
- * @copyright Copyright (c) 2013, Justin Tadlock
- * @link      http://themehybrid.com/plugins/custom-headers
+ * @copyright Copyright (c) 2013 - 2014, Justin Tadlock
+ * @link      http://themehybrid.com/plugins/custom-header-extended
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 

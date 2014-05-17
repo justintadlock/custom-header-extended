@@ -1,11 +1,13 @@
 <?php
 /**
  * Plugin Name: Custom Header Extended
- * Plugin URI: http://themehybrid.com/plugins/custom-header-extended
+ * Plugin URI:  http://themehybrid.com/plugins/custom-header-extended
  * Description: Allows users to create <a href="http://codex.wordpress.org/Custom_Headers">custom headers</a> for individual posts, which are displayed on the single post page.  It works alongside any theme that supports the WordPress <code>custom-header</code> feature.
- * Version: 0.1.1-alpha-1
- * Author: Justin Tadlock
- * Author URI: http://justintadlock.com
+ * Version:     0.1.1-alpha-1
+ * Author:      Justin Tadlock
+ * Author URI:  http://justintadlock.com
+ * Text Domain: custom-header-extended
+ * Domain Path: /languages
  *
  * This plugin was created so that users could create custom headers for individual posts.  It ties
  * into the Wordpress 'custom-header' theme feature.  Therefore, it will only work with themes that 
@@ -21,11 +23,11 @@
  * You should have received a copy of the GNU General Public License along with this program; if not, write 
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @package  CustomHeadersExtended
+ * @package   CustomHeaderExtended
  * @version   0.1.1
  * @since     0.1.0
  * @author    Justin Tadlock <justin@justintadlock.com>
- * @copyright Copyright (c) 2013, Justin Tadlock
+ * @copyright Copyright (c) 2013 - 2014, Justin Tadlock
  * @link      http://themehybrid.com/plugins/custom-header-extended
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
