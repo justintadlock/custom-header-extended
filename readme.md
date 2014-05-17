@@ -127,6 +127,11 @@ Unfortunately, I cannot provide free support for this plugin to everyone. I hone
 
 ## Changelog ##
 
+### Version 0.1.1 ###
+
+* Fixed for translations where there was a typo in the textdomain.
+* Updated plugin file headers.
+
 ### Version 0.1.0 ###
 
 * Everything's new!
