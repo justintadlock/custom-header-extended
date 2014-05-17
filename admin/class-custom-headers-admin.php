@@ -120,12 +120,12 @@ final class CHE_Custom_Headers_Admin {
 
 		/* Set up error strings. */
 		$this->error_strings = array(
-			'min_width_height_error' => __( 'Your image width and height are too small.', 'custom-headers-extended' ),
-			'max_width_height_error' => __( 'Your image width and height are too large.', 'custom-headers-extended' ),
-			'min_width_error'        => __( 'Your image width is too small.',             'custom-headers-extended' ),
-			'min_height_error'       => __( 'Your image height is too small.',            'custom-headers-extended' ),
-			'max_width_error'        => __( 'Your image width is too large.',             'custom-headers-extended' ),
-			'max_height_error'       => __( 'Your image height is too large.',            'custom-headers-extended' ),
+			'min_width_height_error' => __( 'Your image width and height are too small.', 'custom-header-extended' ),
+			'max_width_height_error' => __( 'Your image width and height are too large.', 'custom-header-extended' ),
+			'min_width_error'        => __( 'Your image width is too small.',             'custom-header-extended' ),
+			'min_height_error'       => __( 'Your image height is too small.',            'custom-header-extended' ),
+			'max_width_error'        => __( 'Your image width is too large.',             'custom-header-extended' ),
+			'max_height_error'       => __( 'Your image height is too large.',            'custom-header-extended' ),
 		);
 
 		/* Load scripts and styles. */
@@ -154,8 +154,8 @@ final class CHE_Custom_Headers_Admin {
 
 		/* Set up variables to pass to the custom headers script. */
 		$localize_script = array(
-			'title'        => __( 'Set Header Image', 'custom-headers-extended' ),
-			'button'       => __( 'Set header image', 'custom-headers-extended' ),
+			'title'        => __( 'Set Header Image', 'custom-header-extended' ),
+			'button'       => __( 'Set header image', 'custom-header-extended' ),
 			'min_width'    => $this->min_width,
 			'min_height'   => $this->min_height,
 			'max_width'    => $this->max_width,
@@ -185,7 +185,7 @@ final class CHE_Custom_Headers_Admin {
 
 		add_meta_box(
 			'che-custom-headers',
-			__( 'Custom Header', 'custom-headers-extended' ),
+			__( 'Custom Header', 'custom-header-extended' ),
 			array( $this, 'do_meta_box' ),
 			$post_type,
 			'side',
@@ -224,8 +224,8 @@ final class CHE_Custom_Headers_Admin {
 		<!-- Begin header image. -->
 		<p>
 			<a href="#" class="che-add-media che-add-media-img"><img class="che-header-image-url" src="<?php echo esc_url( $url ); ?>" style="max-width: 100%; max-height: 200px; height: auto; display: block;" /></a>
-			<a href="#" class="che-add-media che-add-media-text"><?php _e( 'Set header image', 'custom-headers-extended' ); ?></a> 
-			<a href="#" class="che-remove-media"><?php _e( 'Remove header image', 'custom-headers-extended' ); ?></a>
+			<a href="#" class="che-add-media che-add-media-text"><?php _e( 'Set header image', 'custom-header-extended' ); ?></a> 
+			<a href="#" class="che-remove-media"><?php _e( 'Remove header image', 'custom-header-extended' ); ?></a>
 		</p>
 		<!-- End header image. -->
 
@@ -266,11 +266,11 @@ final class CHE_Custom_Headers_Admin {
 
 			<!-- Begin header text color. -->
 			<p>
-				<label for="che-header-text-show"><?php _e( 'Show header text with your image.', 'custom-headers-extended' ); ?>
+				<label for="che-header-text-show"><?php _e( 'Show header text with your image.', 'custom-header-extended' ); ?>
 				<select name="che-header-text-show" id="che-header-text-show">
-					<option value="<?php echo display_header_text() ? 'default-show' : 'default-hide'; ?>" <?php selected( empty( $display_text ), true ); ?>><?php _e( 'Default', 'custom-headers-extended' ); ?></option>
-					<option value="show" <?php selected( $display_text, 'show' ); ?>><?php _e( 'Show header text', 'custom-headers-extended' ); ?></option>
-					<option value="hide" <?php selected( $display_text, 'hide' ); ?>><?php _e( 'Hide header text', 'custom-headers-extended' ); ?></option>
+					<option value="<?php echo display_header_text() ? 'default-show' : 'default-hide'; ?>" <?php selected( empty( $display_text ), true ); ?>><?php _e( 'Default', 'custom-header-extended' ); ?></option>
+					<option value="show" <?php selected( $display_text, 'show' ); ?>><?php _e( 'Show header text', 'custom-header-extended' ); ?></option>
+					<option value="hide" <?php selected( $display_text, 'hide' ); ?>><?php _e( 'Hide header text', 'custom-header-extended' ); ?></option>
 				</select>
 			</p>
 
