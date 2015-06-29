@@ -1,104 +1,103 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Custom Header Extended\n"
+"Project-Id-Version: Custom Header Extended WordPress Plugin\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/custom-header-"
+"extended\n"
 "POT-Creation-Date: 2015-06-29 22:44+0200\n"
-"PO-Revision-Date: 2015-06-29 22:43+0200\n"
+"PO-Revision-Date: 2015-06-29 22:44+0200\n"
 "Last-Translator: fxbenard | FxB <fx@fxbenard.com>\n"
-"Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
+"Language-Team: justin@justintadlock.com\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.2\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__;_n;"
+"_x;_x:1,2c;_n:1,2\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: custom-header-extended.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #: admin/class-custom-headers-admin.php:123
 msgid "Your image width and height are too small."
-msgstr ""
+msgstr "La largeur et la hauteur de votre image sont trop petites."
 
 #: admin/class-custom-headers-admin.php:124
 msgid "Your image width and height are too large."
-msgstr ""
+msgstr "La largeur et la hauteur de votre image sont trop grandes."
 
 #: admin/class-custom-headers-admin.php:125
 msgid "Your image width is too small."
-msgstr ""
+msgstr "La largeur de votre image est trop petite."
 
 #: admin/class-custom-headers-admin.php:126
 msgid "Your image height is too small."
-msgstr ""
+msgstr "La hauteur de votre image est trop petite."
 
 #: admin/class-custom-headers-admin.php:127
 msgid "Your image width is too large."
-msgstr ""
+msgstr "La largeur de votre image est trop grande."
 
 #: admin/class-custom-headers-admin.php:128
 msgid "Your image height is too large."
-msgstr ""
+msgstr "La hauteur de votre image est trop grande."
 
 #: admin/class-custom-headers-admin.php:157
 msgid "Set Header Image"
-msgstr ""
+msgstr "Définir l'image d'en-tête"
 
 #: admin/class-custom-headers-admin.php:158
 #: admin/class-custom-headers-admin.php:227
 msgid "Set header image"
-msgstr ""
+msgstr "Définissez l'image de votre en-tête"
 
 #: admin/class-custom-headers-admin.php:188
 msgid "Custom Header"
-msgstr ""
+msgstr "Personnalisation de l&rsquo;en-tête"
 
 #: admin/class-custom-headers-admin.php:228
 msgid "Remove header image"
-msgstr ""
+msgstr "Retirer l&rsquo;image d&rsquo;en-tête"
 
 #: admin/class-custom-headers-admin.php:269
 msgid "Show header text with your image."
-msgstr ""
+msgstr "Afficher le texte d&rsquo;en-tête avec votre image."
 
 #: admin/class-custom-headers-admin.php:271
 msgid "Default"
-msgstr ""
+msgstr "Par défaut"
 
 #: admin/class-custom-headers-admin.php:272
 msgid "Show header text"
-msgstr ""
+msgstr "Afficher le texte de l&rsquo;en-tête"
 
 #: admin/class-custom-headers-admin.php:273
 msgid "Hide header text"
-msgstr ""
+msgstr "Masquer le texte de l&rsquo;en-tête"
 
 #: admin/class-custom-headers-admin.php:278
 msgid "Color"
-msgstr ""
+msgstr "Couleur"
 
 #: admin/class-custom-headers-admin.php:397
 msgid "Plugin support"
-msgstr ""
+msgstr "Support de l'extension"
 
 #: admin/class-custom-headers-admin.php:398
 msgid "Rate plugin"
-msgstr ""
+msgstr "Évaluez cette extension"
 
 #: admin/class-custom-headers-admin.php:399
 msgid "Donate"
-msgstr ""
+msgstr "Faire un don"
 
 #. Plugin Name of the plugin/theme
 msgid "Custom Header Extended"
-msgstr ""
+msgstr "Custom Header Extended"
 
 #. Plugin URI of the plugin/theme
 msgid "http://themehybrid.com/plugins/custom-header-extended"
-msgstr ""
+msgstr "http://themehybrid.com/plugins/custom-header-extended"
 
 #. Description of the plugin/theme
 msgid ""
@@ -107,11 +106,16 @@ msgid ""
 "single post page.  It works alongside any theme that supports the WordPress "
 "<code>custom-header</code> feature."
 msgstr ""
+"Permet aux utilisateurs de créer des <a href=\"http://codex.wordpress.org/"
+"Custom_Headers\">en-têtes personnalisés</a> pour les articles individuels, "
+"qui sont affichés sur la page de chaque article.  L'extension fonctionne "
+"avec n''importe quel thème qui prend en charge la fonctionnalité "
+"<code>custom-header</code> de WordPress."
 
 #. Author of the plugin/theme
 msgid "Justin Tadlock"
-msgstr ""
+msgstr "Justin Tadlock"
 
 #. Author URI of the plugin/theme
 msgid "http://justintadlock.com"
-msgstr ""
+msgstr "http://justintadlock.com"
