@@ -1,14 +1,14 @@
 <?php
 /**
- * Handles the front end display of custom headers.  This class will check if a post has a custom 
- * header assigned to it and filter the custom header theme mods if so on singular post views. The 
- * class also handles the creation of a custom header image size if the current theme doesn't allow 
+ * Handles the front end display of custom headers.  This class will check if a post has a custom
+ * header assigned to it and filter the custom header theme mods if so on singular post views. The
+ * class also handles the creation of a custom header image size if the current theme doesn't allow
  * for both a flexible width and height header image.
  *
  * @package   CustomHeaderExtended
  * @since     0.1.0
- * @author    Justin Tadlock <justin@justintadlock.com>
- * @copyright Copyright (c) 2013 - 2014, Justin Tadlock
+ * @author    Justin Tadlock <justintadlock@gmail.com>
+ * @copyright Copyright (c) 2013 - 2015, Justin Tadlock
  * @link      http://themehybrid.com/plugins/custom-header-extended
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -115,10 +115,10 @@ final class CHE_Custom_Headers_Filter {
 	protected $url = '';
 
 	/**
-	 * Sets up the custom headers support on the front end.  This method is just going to add an action 
-	 * to the `after_setup_theme` hook with a priority of `95`.  This allows us to hook in after themes 
-	 * have had a chance to set up support for the "custom-header" WordPress theme feature.  If themes 
-	 * are doing this any later than this, they probably shouldn't be.  If they're doing so for some 
+	 * Sets up the custom headers support on the front end.  This method is just going to add an action
+	 * to the `after_setup_theme` hook with a priority of `95`.  This allows us to hook in after themes
+	 * have had a chance to set up support for the "custom-header" WordPress theme feature.  If themes
+	 * are doing this any later than this, they probably shouldn't be.  If they're doing so for some
 	 * valid reason, it's probably a custom implementation that we don't want to touch.
 	 *
 	 * @since  0.1.0
@@ -130,8 +130,8 @@ final class CHE_Custom_Headers_Filter {
 	}
 
 	/**
-	 * Checks if the current theme supports the 'custom-header' feature. If not, we won't do anything. 
-	 * If the theme does support it, we'll add a custom header callback on 'wp_head' if the theme 
+	 * Checks if the current theme supports the 'custom-header' feature. If not, we won't do anything.
+	 * If the theme does support it, we'll add a custom header callback on 'wp_head' if the theme
 	 * hasn't defined a custom callback.  This will allow us to add a few extra options for users.
 	 *
 	 * @since  0.1.0
@@ -163,13 +163,13 @@ final class CHE_Custom_Headers_Filter {
 	}
 
 	/**
-	 * Adds a custom header image size for the heaader image.  The only situation in which a custom size 
-	 * is not created is when the theme supports both 'flex-width' and 'flex-height' header images.  In 
+	 * Adds a custom header image size for the heaader image.  The only situation in which a custom size
+	 * is not created is when the theme supports both 'flex-width' and 'flex-height' header images.  In
 	 * that case, the $size property is set to the WordPress 'full' image size.
 	 *
-	 * The image size created is based off the 'width', 'height', 'flex-width', and 'flex-height' arguments 
-	 * set by the theme when adding support for 'custom-header'.  If 'flex-width' or 'flex-height' is set 
-	 * to TRUE, then the image size values for width and height will be set to `9999`.  Otherwise, the 
+	 * The image size created is based off the 'width', 'height', 'flex-width', and 'flex-height' arguments
+	 * set by the theme when adding support for 'custom-header'.  If 'flex-width' or 'flex-height' is set
+	 * to TRUE, then the image size values for width and height will be set to `9999`.  Otherwise, the
 	 * width and height are set to the corresponding theme's 'width' and 'height' arguments.
 	 *
 	 * @since  0.1.0
@@ -184,8 +184,8 @@ final class CHE_Custom_Headers_Filter {
 		$this->flex_width   = get_theme_support( 'custom-header', 'flex-width'  );
 		$this->flex_height  = get_theme_support( 'custom-header', 'flex-height' );
 
-		/* 
-		 * Set the $crop property based off the $flex_width and $flex_height properties.  If either of 
+		/*
+		 * Set the $crop property based off the $flex_width and $flex_height properties.  If either of
 		 * of the properties are TRUE, we'll do a "soft" crop.  Otherwise, we'll use a "hard" crop.
 		 */
 		$this->crop = $this->flex_width || $this->flex_height ? false : true;
@@ -197,38 +197,38 @@ final class CHE_Custom_Headers_Filter {
 		/* === Set the image size. */
 
 		/*
-		 * Allow devs/users to hook in to overwrite the available object properties before an image 
-		 * size is added.  This will allow them to further define how their header image size is 
-		 * handled.  Really, the only things worth changing are the $width, $height, and/or $crop 
-		 * properties.  This script defines these based on the theme, but it's not as flexible as 
-		 * possible because WordPress really needs to allow for options like 'min-height', 'min-width', 
+		 * Allow devs/users to hook in to overwrite the available object properties before an image
+		 * size is added.  This will allow them to further define how their header image size is
+		 * handled.  Really, the only things worth changing are the $width, $height, and/or $crop
+		 * properties.  This script defines these based on the theme, but it's not as flexible as
+		 * possible because WordPress really needs to allow for options like 'min-height', 'min-width',
 		 * 'max-height', and 'max-width' to really make for the most accurate cropping.
 		 */
 		do_action( 'che_pre_add_image_size', $this );
 
 		/*
-		 * If the theme allows both flexible width and height, don't add an image size. Just use the 
-		 * default WordPress "full" size. 
+		 * If the theme allows both flexible width and height, don't add an image size. Just use the
+		 * default WordPress "full" size.
 		 */
 		if ( $this->flex_width && $this->flex_height )
 			$this->size = 'full';
 
 		/*
-		 * If $flex_width is supported but not $flex_height, soft crop an image wih the set height and 
+		 * If $flex_width is supported but not $flex_height, soft crop an image wih the set height and
 		 * a width of "9999" to handle any width.
 		 */
 		elseif ( $this->flex_width && !$this->flex_height )
 			add_image_size( $this->size, 9999, $this->height, $this->crop );
 
 		/*
-		 * If $flex_height is supported but not $flex_width, soft crop an image wih the set width and 
+		 * If $flex_height is supported but not $flex_width, soft crop an image wih the set width and
 		 * a height of "9999" to handle any height.
 		 */
 		elseif ( !$this->flex_width && $this->flex_height )
 			add_image_size( $this->size, $this->width, 9999, $this->crop );
 
 		/*
-		 * If neither $flex_width nor $flex_width is supported, hard crop an image with the set width 
+		 * If neither $flex_width nor $flex_width is supported, hard crop an image with the set width
 		 * and height.
 		 */
 		else
@@ -236,7 +236,7 @@ final class CHE_Custom_Headers_Filter {
 	}
 
 	/**
-	 * Filters the 'theme_mod_header_image' hook.  Checks if there's a featured image with the 
+	 * Filters the 'theme_mod_header_image' hook.  Checks if there's a featured image with the
 	 * correct dimensions to replace the header image on single posts.
 	 *
 	 * @since  0.1.0
@@ -321,8 +321,8 @@ final class CHE_Custom_Headers_Filter {
 	}
 
 	/**
-	 * Filters the 'editor_max_image_size' hook so that the header image isn't contrained by the theme's 
-	 * $content_width variable.  This will cause the image width, which can be wider than the content 
+	 * Filters the 'editor_max_image_size' hook so that the header image isn't contrained by the theme's
+	 * $content_width variable.  This will cause the image width, which can be wider than the content
 	 * width to be the incorrect size.
 	 *
 	 * @since  0.1.0
@@ -338,8 +338,8 @@ final class CHE_Custom_Headers_Filter {
 	}
 
 	/**
-	 * Filters the 'theme_mod_header_image_data' hook.  This is used to set the header image data for 
-	 * the custom header image being used.  Most importantly, it overwrites the `width` and `height` 
+	 * Filters the 'theme_mod_header_image_data' hook.  This is used to set the header image data for
+	 * the custom header image being used.  Most importantly, it overwrites the `width` and `height`
 	 * attributes so themes that use this will have the correct width and height.
 	 *
 	 * @since  0.1.0
@@ -359,7 +359,7 @@ final class CHE_Custom_Headers_Filter {
 			$new_data['height']        = !$this->flex_height ? $this->theme_height : $this->height;
 
 			/*
-			 * WordPress seems to be inconsistent with whether this is an array or object. If the 
+			 * WordPress seems to be inconsistent with whether this is an array or object. If the
 			 * user has saved header options, it seems to be an object. Else, it's an array.
 			 */
 			$data = is_object( $data ) ? (object) $new_data : $new_data;
@@ -369,10 +369,10 @@ final class CHE_Custom_Headers_Filter {
 	}
 
 	/**
-	 * Filters the 'theme_mod_header_textcolor' hook.  This is a bit tricky since WP actually puts two 
-	 * options (whether to display header text and the text color itself) under the same 
+	 * Filters the 'theme_mod_header_textcolor' hook.  This is a bit tricky since WP actually puts two
+	 * options (whether to display header text and the text color itself) under the same
 	 * 'header_textcolor' theme mod.  To deal with this, the plugin has two separate post meta keys.
-	 * The first deals with showing the header text (default, show, hide).  The second allows the 
+	 * The first deals with showing the header text (default, show, hide).  The second allows the
 	 * user to select a custom color.
 	 *
 	 * Note that a 'blank' text color means to hide the header text.

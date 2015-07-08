@@ -1,14 +1,14 @@
 <?php
 /**
- * The admin class for the plugin.  This sets up a "Custom Header" meta box on the edit post screen in 
- * the admin.  It loads the WordPress media views script and a custom JS file for allowing the user to 
- * select a custom header image that will overwrite the header on the front end for the singular view 
+ * The admin class for the plugin.  This sets up a "Custom Header" meta box on the edit post screen in
+ * the admin.  It loads the WordPress media views script and a custom JS file for allowing the user to
+ * select a custom header image that will overwrite the header on the front end for the singular view
  * of the post.
  *
  * @package   CustomHeaderExtended
  * @since     0.1.0
- * @author    Justin Tadlock <justin@justintadlock.com>
- * @copyright Copyright (c) 2013 - 2014, Justin Tadlock
+ * @author    Justin Tadlock <justintadlock@gmail.com>
+ * @copyright Copyright (c) 2013 - 2015, Justin Tadlock
  * @link      http://themehybrid.com/plugins/custom-header-extended
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
@@ -91,7 +91,7 @@ final class CHE_Custom_Headers_Admin {
 	}
 
 	/**
-	 * Sets up actions to run on specific hooks on the edit post screen if both the theme and current 
+	 * Sets up actions to run on specific hooks on the edit post screen if both the theme and current
 	 * post type supports the 'custom-header' feature.
 	 *
 	 * @since  0.1.0
@@ -224,7 +224,7 @@ final class CHE_Custom_Headers_Admin {
 		<!-- Begin header image. -->
 		<p>
 			<a href="#" class="che-add-media che-add-media-img"><img class="che-header-image-url" src="<?php echo esc_url( $url ); ?>" style="max-width: 100%; max-height: 200px; height: auto; display: block;" /></a>
-			<a href="#" class="che-add-media che-add-media-text"><?php _e( 'Set header image', 'custom-header-extended' ); ?></a> 
+			<a href="#" class="che-add-media che-add-media-text"><?php _e( 'Set header image', 'custom-header-extended' ); ?></a>
 			<a href="#" class="che-remove-media"><?php _e( 'Remove header image', 'custom-header-extended' ); ?></a>
 		</p>
 		<!-- End header image. -->
@@ -254,7 +254,7 @@ final class CHE_Custom_Headers_Admin {
 		?>
 		</p></div>
 
-		<?php if ( current_theme_supports( 'custom-header', 'header-text' ) ) { 
+		<?php if ( current_theme_supports( 'custom-header', 'header-text' ) ) {
 
 			/* Get the header text display option. */
 			$display_text = get_post_meta( $post->ID, '_custom_header_text_display', true );
@@ -287,8 +287,8 @@ final class CHE_Custom_Headers_Admin {
 	}
 
 	/**
-	 * Filters the 'editor_max_image_size' hook so that the header image isn't contrained by the theme's 
-	 * $content_width variable.  This will cause the image width, which can be wider than the content 
+	 * Filters the 'editor_max_image_size' hook so that the header image isn't contrained by the theme's
+	 * $content_width variable.  This will cause the image width, which can be wider than the content
 	 * width to be the incorrect size.
 	 *
 	 * @since  0.1.0
