@@ -148,11 +148,16 @@ Unfortunately, I cannot provide free support for this plugin to everyone. I hone
 
 == Changelog ==
 
-### Version 0.1.1 ###
+Please see the `changelog.md` file included with the plugin.  Or, you can view the [online change log](https://github.com/justintadlock/custom-header-extended/blob/master/changelog.md)
 
-* Fixed for translations where there was a typo in the textdomain.
-* Updated plugin file headers.
 
-### Version 0.1.0 ###
 
-* Everything's new!
+
+
+
+
+
+
+
+
+

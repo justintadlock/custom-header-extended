@@ -124,14 +124,3 @@ Unfortunately, I cannot provide free support for this plugin to everyone. I hone
 1. Custom header meta box.
 2. Custom header meta box on the edit post screen.
 3. Custom header on a single post page.
-
-## Changelog ##
-
-### Version 0.1.1 ###
-
-* Fixed for translations where there was a typo in the textdomain.
-* Updated plugin file headers.
-
-### Version 0.1.0 ###
-
-* Everything's new!
