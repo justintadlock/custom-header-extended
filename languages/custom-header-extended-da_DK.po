@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Custom Header Extended 1.0\n"
 "POT-Creation-Date: 2015-08-31 09:10+0200\n"
-"PO-Revision-Date: 2015-08-31 09:17+0200\n"
+"PO-Revision-Date: 2015-08-31 11:30+0200\n"
 "Language-Team: ThomasDK81 <thomadk81@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: Thomas Blomberg Hansen <thomas@blomberg.it>\n"
+"Last-Translator: ThomasDK81 <thomasdk81@gmail.com>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: da_DK\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -46,16 +46,16 @@ msgstr "Billedet er for højt."
 
 #: admin/class-custom-headers-admin.php:157
 msgid "Set Header Image"
-msgstr "Angiv header billede"
+msgstr "Vælg header billede"
 
 #: admin/class-custom-headers-admin.php:158
 #: admin/class-custom-headers-admin.php:227
 msgid "Set header image"
-msgstr "Angiv header billede"
+msgstr "Vælg header billede"
 
 #: admin/class-custom-headers-admin.php:188
 msgid "Custom Header"
-msgstr "Brugerdefineret header"
+msgstr "Individuelt header"
 
 #: admin/class-custom-headers-admin.php:228
 msgid "Remove header image"
