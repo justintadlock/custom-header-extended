@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Header Extended 1.0\n"
+"POT-Creation-Date: 2015-08-31 09:10+0200\n"
+"PO-Revision-Date: 2015-08-31 09:17+0200\n"
+"Language-Team: ThomasDK81 <thomadk81@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: custom-header-extended.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: Thomas Blomberg Hansen <thomas@blomberg.it>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: da_DK\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-custom-headers-admin.php:123
+msgid "Your image width and height are too small."
+msgstr "Billedet er ikke bredt og højt nok."
+
+#: admin/class-custom-headers-admin.php:124
+msgid "Your image width and height are too large."
+msgstr "Billedet er for bredt og højt."
+
+#: admin/class-custom-headers-admin.php:125
+msgid "Your image width is too small."
+msgstr "Billedets bredde er for lille."
+
+#: admin/class-custom-headers-admin.php:126
+msgid "Your image height is too small."
+msgstr "Billedet er ikke højt nok."
+
+#: admin/class-custom-headers-admin.php:127
+msgid "Your image width is too large."
+msgstr "Billedet er for bredt."
+
+#: admin/class-custom-headers-admin.php:128
+msgid "Your image height is too large."
+msgstr "Billedet er for højt."
+
+#: admin/class-custom-headers-admin.php:157
+msgid "Set Header Image"
+msgstr "Angiv header billede"
+
+#: admin/class-custom-headers-admin.php:158
+#: admin/class-custom-headers-admin.php:227
+msgid "Set header image"
+msgstr "Angiv header billede"
+
+#: admin/class-custom-headers-admin.php:188
+msgid "Custom Header"
+msgstr "Brugerdefineret header"
+
+#: admin/class-custom-headers-admin.php:228
+msgid "Remove header image"
+msgstr "Fjern header billede"
+
+#: admin/class-custom-headers-admin.php:269
+msgid "Show header text with your image."
+msgstr "Vis header teksten ved billedet."
+
+#: admin/class-custom-headers-admin.php:271
+msgid "Default"
+msgstr "Standard"
+
+#: admin/class-custom-headers-admin.php:272
+msgid "Show header text"
+msgstr "Vis header teskten"
+
+#: admin/class-custom-headers-admin.php:273
+msgid "Hide header text"
+msgstr "Skjul header teksten"
+
+#: admin/class-custom-headers-admin.php:278
+msgid "Color"
+msgstr "Farve"
+
+#: admin/class-custom-headers-admin.php:397
+msgid "Plugin support"
+msgstr "Plugin support"
+
+#: admin/class-custom-headers-admin.php:398
+msgid "Rate plugin"
+msgstr "Bedøm plugin"
+
+#: admin/class-custom-headers-admin.php:399
+msgid "Donate"
+msgstr "Donér"
+
+#. Plugin Name of the plugin/theme
+msgid "Custom Header Extended"
+msgstr "Custom Header Extended"
+
+#. Plugin URI of the plugin/theme
+msgid "http://themehybrid.com/plugins/custom-header-extended"
+msgstr "http://themehybrid.com/plugins/custom-header-extended"
+
+#. Description of the plugin/theme
+msgid ""
+"Allows users to create <a href=\"http://codex.wordpress.org/Custom_Headers"
+"\">custom headers</a> for individual posts, which are displayed on the "
+"single post page.  It works alongside any theme that supports the WordPress "
+"<code>custom-header</code> feature."
+msgstr ""
+"Allows users to create <a href=\"http://codex.wordpress.org/Custom_Headers"
+"\">custom headers</a> for individual posts, which are displayed on the "
+"single post page.  It works alongside any theme that supports the WordPress "
+"<code>custom-header</code> feature."
+
+#. Author of the plugin/theme
+msgid "Justin Tadlock"
+msgstr "Justin Tadlock"
+
+#. Author URI of the plugin/theme
+msgid "http://justintadlock.com"
+msgstr "http://justintadlock.com"
