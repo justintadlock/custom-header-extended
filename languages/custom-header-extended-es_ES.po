@@ -1,0 +1,126 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Header Extended\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-29 22:44+0200\n"
+"PO-Revision-Date: Sat Jan 02 2016 17:18:54 GMT+0100 (Hora estándar romance)\n"
+"Last-Translator: Ququr_Uxcho <sinrantessdgthestreet@gmail.com>\n"
+"Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
+"Language: Spanish (Spain)\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: custom-header-extended.php\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Loco-Target-Locale: es_ES"
+
+#: admin/class-custom-headers-admin.php:123
+msgid "Your image width and height are too small."
+msgstr "El ancho y largo de la imagen es muy pequeño."
+
+#: admin/class-custom-headers-admin.php:124
+msgid "Your image width and height are too large."
+msgstr "El ancho y largo de la imagen es muy grande."
+
+#: admin/class-custom-headers-admin.php:125
+msgid "Your image width is too small."
+msgstr "El ancho de la imagen es muy pequeño."
+
+#: admin/class-custom-headers-admin.php:126
+msgid "Your image height is too small."
+msgstr "El largo de la imagen es muy pequeño."
+
+#: admin/class-custom-headers-admin.php:127
+msgid "Your image width is too large."
+msgstr "El ancho de la imagen es muy grande."
+
+#: admin/class-custom-headers-admin.php:128
+msgid "Your image height is too large."
+msgstr "El largo de la imagen es muy grande."
+
+#: admin/class-custom-headers-admin.php:157
+msgid "Set Header Image"
+msgstr "Cambiar imagen de cabecera"
+
+#: admin/class-custom-headers-admin.php:158
+#: admin/class-custom-headers-admin.php:227
+msgid "Set header image"
+msgstr "Cambiar imagen de cabecera"
+
+#: admin/class-custom-headers-admin.php:188
+msgid "Custom Header"
+msgstr "Cabecera personalizada"
+
+#: admin/class-custom-headers-admin.php:228
+msgid "Remove header image"
+msgstr "Eliminar imagen de cabecera"
+
+#: admin/class-custom-headers-admin.php:269
+msgid "Show header text with your image."
+msgstr "Mostrar texto en cabecera con tu imagen."
+
+#: admin/class-custom-headers-admin.php:271
+msgid "Default"
+msgstr "Defecto"
+
+#: admin/class-custom-headers-admin.php:272
+msgid "Show header text"
+msgstr "Mostrar texto en cabecera"
+
+#: admin/class-custom-headers-admin.php:273
+msgid "Hide header text"
+msgstr "Ocultar texto en cabecera"
+
+#: admin/class-custom-headers-admin.php:278
+msgid "Color"
+msgstr "Color"
+
+#: admin/class-custom-headers-admin.php:397
+msgid "Plugin support"
+msgstr "Soporte del plugin"
+
+#: admin/class-custom-headers-admin.php:398
+msgid "Rate plugin"
+msgstr "Votar plugin"
+
+#: admin/class-custom-headers-admin.php:399
+msgid "Donate"
+msgstr "Donar"
+
+#. Plugin Name of the plugin/theme
+msgid "Custom Header Extended"
+msgstr "Custom Header Extended"
+
+#. Plugin URI of the plugin/theme
+msgid "http://themehybrid.com/plugins/custom-header-extended"
+msgstr "http://themehybrid.com/plugins/custom-header-extended"
+
+#. Description of the plugin/theme
+msgid ""
+"Allows users to create <a href=\"http://codex.wordpress."
+"org/Custom_Headers\">custom headers</a> for individual posts, which are "
+"displayed on the single post page.  It works alongside any theme that "
+"supports the WordPress <code>custom-header</code> feature."
+msgstr ""
+"Permite a los usuarios crear <a href=\"http://codex.wordpress."
+"org/Custom_Headers\">Cabeceras personalizadas</a> para entradas individuales, "
+"cuando están en una entrada individual.  Esto funciona en cualquier tema que "
+"soporte la característica <code>custom-header</code>."
+
+#. Author of the plugin/theme
+msgid "Justin Tadlock"
+msgstr "Justin Tadlock (Traducido por: Ququr_Uxcho)"
+
+#. Author URI of the plugin/theme
+msgid "http://justintadlock.com"
+msgstr "http://justintadlock.com"
