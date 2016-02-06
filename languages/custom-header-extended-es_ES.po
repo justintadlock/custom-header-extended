@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Custom Header Extended\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-29 22:44+0200\n"
-"PO-Revision-Date: Sat Jan 02 2016 17:18:54 GMT+0100 (Hora estándar romance)\n"
+"PO-Revision-Date: Sat Feb 06 2016 08:26:11 GMT+0100 (Hora estándar romance)\n"
 "Last-Translator: Ququr_Uxcho <sinrantessdgthestreet@gmail.com>\n"
 "Language-Team: fxbenard | FxB <fx@fxbenard.com>\n"
 "Language: Spanish (Spain)\n"
@@ -119,7 +119,7 @@ msgstr ""
 
 #. Author of the plugin/theme
 msgid "Justin Tadlock"
-msgstr "Justin Tadlock (Traducido por: Ququr_Uxcho)"
+msgstr "Justin Tadlock"
 
 #. Author URI of the plugin/theme
 msgid "http://justintadlock.com"
