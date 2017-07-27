@@ -3,7 +3,7 @@
  * Plugin Name: Custom Header Extended
  * Plugin URI:  http://themehybrid.com/plugins/custom-header-extended
  * Description: Allows users to create <a href="http://codex.wordpress.org/Custom_Headers">custom headers</a> for individual posts, which are displayed on the single post page.  It works alongside any theme that supports the WordPress <code>custom-header</code> feature.
- * Version:     1.0.0
+ * Version:     1.1.0-dev
  * Author:      Justin Tadlock
  * Author URI:  http://justintadlock.com
  * Text Domain: custom-header-extended
