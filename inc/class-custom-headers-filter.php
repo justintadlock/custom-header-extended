@@ -157,8 +157,7 @@ final class CHE_Custom_Headers_Filter {
 			add_filter( 'theme_mod_header_image_data', array( $this, 'header_image_data' ), 25 );
 
 			/* Filter the header text color. */
-			if ( current_theme_supports( 'custom-header', 'header-text' ) )
-				add_filter( 'theme_mod_header_textcolor', array( $this, 'header_textcolor' ), 25 );
+			add_filter( 'theme_mod_header_textcolor', array( $this, 'header_textcolor' ), 25 );
 		}
 	}
 
@@ -385,7 +384,7 @@ final class CHE_Custom_Headers_Filter {
 	public function header_textcolor( $textcolor ) {
 
 		/* If we're not viewing a singular post, return the URL. */
-		if ( !is_singular() )
+		if ( ! current_theme_supports( 'custom-header', 'header-text' ) || !is_singular() )
 			return $textcolor;
 
 		/* Get the queried post data. */
